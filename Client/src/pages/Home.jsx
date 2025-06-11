@@ -1,6 +1,14 @@
+import React from 'react';
+import Navbar from '../components/Navbar.jsx';
+import Footer from '../components/Footer.jsx';
+
 function Home() {
     return (
-        <h1>Hello World</h1>
+        <>
+            <Navbar />
+            <h1>Hello World</h1>
+            <Footer />
+        </>
     );
 }
 
