@@ -12,7 +12,8 @@
     "build-server": "cp -r Server dist-server",
     "lint": "eslint .",
     "preview": "vite preview",
-    "clean": "rm -rf dist dist-server node_modules"
+    "clean": "rm -rf dist dist-server node_modules",
+    "test": "echo \"No tests specified\" && exit 0"
   },
   "repository": {
     "type": "git",
