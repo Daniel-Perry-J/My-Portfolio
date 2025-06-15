@@ -10,6 +10,7 @@ lerna-debug.log*
 # Dependency directories
 node_modules
 dist
+dist-server
 dist-ssr
 *.local
 
@@ -27,3 +28,17 @@ dist-ssr
 # Security
 .env
 .env.local
+.vercel
+
+# Build output
+build
+
+# Temporary files
+tmp
+temp
+
+# Coverage reports
+coverage
+
+# Miscellaneous
+*.tgz
