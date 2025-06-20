@@ -7,8 +7,7 @@ function Navbar() {
             <ul className="flex justify-around items-center bg-gray-800 text-white p-4">
                 <li>
                     <Link
-                        className={`transition-all duration-200 hover:border-b-4 hover:border-yellow-400 padding-2 ${location.pathname === "/" ? "active" : ""
-                            }`}
+                        className={`transition-all duration-200 hover:font-bold hover:border-b-4 hover:border-yellow-400 p-2 ${location.pathname === "/" ? "border-b-4 border-yellow-400 font-bold text-yellow-400" : ""}`}
                         to="/"
                     >
                         Home
@@ -16,8 +15,7 @@ function Navbar() {
                 </li>
                 <li>
                     <Link
-                        className={`transition-all duration-200 hover:border-b-4 hover:border-yellow-400 padding-2 ${location.pathname === "/about" ? "active" : ""
-                            }`}
+                        className={`transition-all duration-200 hover:font-bold hover:border-b-4 hover:border-yellow-400 p-2 ${location.pathname === "/about" ? "border-b-4 border-yellow-400 font-bold text-yellow-400" : ""}`}
                         to="/about"
                     >
                         About
@@ -25,8 +23,7 @@ function Navbar() {
                 </li>
                 <li>
                     <Link
-                        className={`transition-all duration-200 hover:border-b-4 hover:border-yellow-400 padding-2 ${location.pathname === "/contact" ? "active" : ""
-                            }`}
+                        className={`transition-all duration-200 hover:font-bold hover:border-b-4 hover:border-yellow-400 p-2 ${location.pathname === "/contact" ? "border-b-4 border-yellow-400 font-bold text-yellow-400" : ""}`}
                         to="/contact"
                     >
                         Contact
@@ -34,41 +31,13 @@ function Navbar() {
                 </li>
                 <li>
                     <Link
-                        className={`transition-all duration-200 hover:border-b-4 hover:border-yellow-400 padding-2 ${location.pathname === "/services" ? "active" : ""
-                            }`}
-                        to="/services"
-                    >
-                        Services
-                    </Link>
-                </li>
-                <li>
-                    <Link
-                        className={`transition-all duration-200 hover:border-b-4 hover:border-yellow-400 padding-2 ${location.pathname === "/projects" ? "active" : ""
-                            }`}
+                        className={`transition-all duration-200 hover:font-bold hover:border-b-4 hover:border-yellow-400 p-2 ${location.pathname === "/projects" ? "border-b-4 border-yellow-400 font-bold text-yellow-400" : ""}`}
                         to="/projects"
                     >
                         Projects
                     </Link>
                 </li>
-                <li>
-                    <Link
-                        className={`transition-all duration-200 hover:border-b-4 hover:border-yellow-400 padding-2 ${location.pathname === "/blog" ? "active" : ""
-                            }`}
-                        to="/blog"
-                    >
-                        Blog
-                    </Link>
-                </li>
             </ul>
-            <style>
-                {`
-                    .active {
-                        color: yellow;
-                        font-weight: bold;
-                        border-bottom: 2px solid yellow;
-                    }
-                `}
-            </style>
         </nav>
     );
 }
